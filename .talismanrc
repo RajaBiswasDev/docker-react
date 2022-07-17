@@ -1,0 +1,6 @@
+fileignoreconfig:
+- filename: package-lock.json
+  checksum: 70a0fe98c51450513b8df2064d1ad80abc94777640923e9d7ebe06c3f42736e1
+- filename: .idea/checkstyle-idea.xml
+  checksum: c6ca8b37fe720aaf6e76d0aef9e9a9d304c2df23c0e7bf283830067e8916b21c
+version: ""
