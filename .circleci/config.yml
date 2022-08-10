@@ -5,10 +5,7 @@ jobs:
    machine:
     image: ubuntu-2204:2022.04.2
    steps:
-     - checkout:
-          path: /
-     - run: docker build -t docker-react -f Dockerfile.dev .
-     - run: docker run -e CI=true docker-react npm run test
+     - run: echo ls
 workflows:
   say-hello-workflow:
     jobs:
