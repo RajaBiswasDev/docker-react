@@ -1,12 +1,9 @@
 version: 2.1
 jobs:
   build:
-   working_directory: /
    machine:
     image: ubuntu-2204:2022.04.2
    steps:
-     - checkout:
-          path: /
      - run: ls
 workflows:
   say-hello-workflow:
