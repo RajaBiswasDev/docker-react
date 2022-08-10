@@ -1,12 +1,12 @@
 version: 2.1
 jobs:
   build:
-   working_directory: .
+   working_directory: ./
    machine:
     image: ubuntu-2204:2022.04.2
    steps:
      - checkout:
-          path: .
+          path: ./
      - run: docker build -t docker-react -f Dockerfile.dev .
      - run: docker run -e CI=true docker-react npm run test
 workflows:
