@@ -6,6 +6,8 @@ jobs:
     steps:
       - checkout
       - run: |
+          echo $DOCKER_USER
+          echo $DOCKER_PASS
           docker login -u $DOCKER_USER -p $DOCKER_PASS
           docker build -t docker-react -f Dockerfile.dev .
           docker run -e CI=true docker-react npm run test
