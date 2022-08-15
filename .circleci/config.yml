@@ -3,9 +3,6 @@ jobs:
   build:
     docker:
       - image: ubuntu
-        auth:
-          username: biswasraja
-          password: $DOCKERHUB_ACCESS_TOKEN
     steps:
       - checkout
       - run: |
