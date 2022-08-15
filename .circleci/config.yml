@@ -3,6 +3,9 @@ jobs:
   build:
     docker:
       - image: ubuntu-2204:2022.04.2
+        auth:
+          username: $DOCKER_USER
+          password: $DOCKER_PASS
     steps:
       - checkout
       - run: |
